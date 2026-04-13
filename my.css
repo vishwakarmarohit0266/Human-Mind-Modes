@@ -1,0 +1,200 @@
+    /* ---------- Global Styles ---------- */
+.dark{
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --primary: #38bdf8;
+}
+ :root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --text: #222;
+  --muted: #666;
+  --primary: #0066cc;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 20px;
+  transition: background .3s, color .3s;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.links a {
+  margin-left: 12px;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+    .modal {
+      display: block;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background: transparent;
+    }
+    .modal-content {
+    background: linear-gradient(90deg, #FF8B00 0%, #ffffff,#43a047 100%);
+    color: rgba(0, 78, 255, 1);
+      padding: 20px;
+      margin: 15% auto;
+      width: 300px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    
+button {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: var(--primary);
+  color: white;
+}
+
+  H1{
+  color: rgba(255, 2, 2, 1);
+  }
+  H2{
+  color: rgba(255, 2, 2, 1);
+  font-size: 20px;
+  }
+  H3{
+  color: rgba(0, 132, 226, 1);
+  }
+  H4{
+  color: rgba(0, 132, 226, 1);
+  }
+  ni{
+  color: rgba(11, 175, 43, 1);
+  }
+  .link-btn{padding:8px 10px;border-radius:8px;border:none;background:transparent;color:rgba(0, 130, 202, 0.91); font-weight:700;text-decoration:none;font-size:17px;};
+.meta {
+  font-size: .8rem;
+  color: var(--muted);
+}
+
+.read {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 7px 14px;
+  background: var(--primary);
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: .85rem;
+}
+
+    header {
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      background: transparent;
+      box-shadow: rgba(0, 0, 0, 0.3);
+    }
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      background: transparent;
+      box-shadow: rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #38bdf8;
+    }
+
+    /* ---------- Video Grid ---------- */
+    #video-feed {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1400px;
+      padding: 30px 0;
+      justify-items: center;
+    }
+
+    /* ---------- Video Card ---------- */
+    .video-card {
+      margin-left: 5px;
+      margin-right: 5px ;
+      background: transparent;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .video-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    video {
+      width: 100%;
+      height: 300px;
+      object-fit: contain; /* Ensures the full video fits inside frame */
+      background: #0f172a;
+      display: block;
+    }
+
+    .video-info {
+      padding: 15px;
+    }
+
+    .video-info h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #e2e8f0;
+    }
+
+    .video-info p {
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 600px) {
+      video {
+        height: 200px;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+  }
